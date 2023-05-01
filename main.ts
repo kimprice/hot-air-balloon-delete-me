@@ -411,9 +411,8 @@ balloonInflated = img`
     ......fcccccf......
     .......fffff.......
     `
-music.setVolume(0)
 balloon = sprites.create(balloonDeflated, SpriteKind.Player)
-scene.setBackgroundColor(9)
+scene.setBackgroundColor(6)
 balloon.ay = 35
 balloon.setStayInScreen(true)
 balloon.z = 100
@@ -573,7 +572,7 @@ game.setDialogFrame(img`
     .cbbbbc..................cbbbbc..
     .................................
     `)
-game.showLongText("Stay in the air as long as you can! Hold any   button to turn on the burner.", DialogLayout.Center)
+game.showLongText("Stay in the air as long as you can! Hold any button to turn on the burner.", DialogLayout.Center)
 for (let index = 0; index <= 1; index++) {
     spawnSomething(randint(0, 40))
 }
